@@ -1,0 +1,144 @@
+Use this as the prompt/context for the LLM:
+
+⸻
+
+Build a simple but polished interactive web app called Movie Picker that helps users discover a movie based on genre, mood, and runtime. The app should feel modern, playful, and highly interactive, even if the underlying dataset is small or mocked.
+
+Core concept
+
+Users should be able to choose what kind of movie they want to watch by adjusting filters and preferences, and the app should recommend matching movies in a visually engaging way.
+
+Main features
+
+The app should include a lot of interactive UI elements, not just static dropdowns. I want it to feel dynamic and fun to use.
+
+Required filters and controls
+	•	Genre selector with multiple selectable options such as:
+	•	Action
+	•	Comedy
+	•	Drama
+	•	Sci-Fi
+	•	Horror
+	•	Romance
+	•	Thriller
+	•	Animation
+	•	Mood selector with options like:
+	•	Feel-good
+	•	Dark
+	•	Emotional
+	•	Mind-bending
+	•	Relaxing
+	•	Suspenseful
+	•	Inspirational
+	•	Funny
+	•	Runtime filter using an interactive range slider
+	•	Under 90 min
+	•	90–120 min
+	•	120–150 min
+	•	150+ min
+	•	Or let users drag a min/max range
+	•	Year range filter with a second slider
+	•	Rating filter using clickable stars or score chips
+	•	Streaming platform filter using toggle buttons such as Netflix, Hulu, Prime, Disney+, Max
+	•	Language filter
+	•	“Surprise me” button that picks a random matching movie
+	•	“Not this one” / reroll button to cycle to another match
+	•	Favorites button to save movies locally
+	•	Watched toggle to mark movies as seen
+
+Interactive elements I want included
+
+Make the interface rich with interactivity. Include as many of these as possible:
+	•	Clickable filter chips
+	•	Animated sliders
+	•	Toggle switches
+	•	Search bar with instant filtering
+	•	Sort dropdown
+	•	Hover effects on movie cards
+	•	Expandable movie detail modal/drawer
+	•	Animated transitions when filters change
+	•	Swipe-style card interactions or carousel for recommendations
+	•	Bookmark/favorite heart animation
+	•	Progress ring or count showing how many movies match
+	•	Empty state with helpful suggestions
+	•	Reset filters button
+	•	Theme toggle such as dark/light mode
+	•	Small loading animation even if using mock data
+	•	Responsive design for mobile and desktop
+
+Recommendation behavior
+
+The app should:
+	•	Filter movies in real time as the user changes controls
+	•	Show a recommended top match prominently
+	•	Also show a grid or carousel of other matching movies
+	•	Explain briefly why a movie was recommended, for example:
+	•	“Matches your Comedy + Feel-good filters and fits your 90–120 min runtime”
+	•	If no movies match, suggest relaxing one or two filters
+
+Data
+
+Use a small mock dataset of around 20–30 movies stored locally in the app. Each movie object should include:
+	•	title
+	•	genre (array)
+	•	mood (array)
+	•	runtime
+	•	year
+	•	rating
+	•	streaming platforms
+	•	language
+	•	short description
+	•	poster image URL or placeholder
+	•	favorite / watched state if needed locally
+
+UI/layout
+
+Suggested layout:
+	•	Top navbar with app title, theme toggle, and favorites button
+	•	Hero/header section with short tagline like “Find your next movie in seconds”
+	•	Filter panel with interactive controls
+	•	Results section with:
+	•	total matches count
+	•	highlighted recommendation
+	•	movie card grid or carousel
+	•	Movie detail modal when clicking a card
+	•	Favorites section or side panel
+
+Design style
+	•	Clean, modern, slightly cinematic
+	•	Rounded cards and buttons
+	•	Smooth animations
+	•	Strong spacing and hierarchy
+	•	Use visually distinct tags/chips for genres and moods
+	•	Should look like a real mini product, not a school demo
+
+Technical preferences
+	•	Build it as a single-page web app
+	•	Good choice would be React
+	•	Use component-based structure
+	•	Store favorites/watched in localStorage
+	•	Keep code clean and readable
+	•	Use mock data only; no backend required
+	•	Make it responsive
+	•	Include some subtle animation if possible
+
+Nice-to-have extras
+	•	Match score percentage for each movie
+	•	Mini confetti or animation on “Surprise me”
+	•	Recently viewed movies section
+	•	Compare two movies side by side
+	•	“Tonight’s pick” card with extra emphasis
+	•	Keyboard accessibility
+	•	Debounced search input
+
+Output expectations
+
+Please generate:
+	1.	The full app code
+	2.	A clean component structure
+	3.	Mock movie data
+	4.	Modern styling
+	5.	Interactivity built into the UI
+	6.	A design that feels lively and engaging rather than basic
+
+The goal is a small, quick web app that still feels impressive because of the number of interactive elements and the polish of the user experience.
